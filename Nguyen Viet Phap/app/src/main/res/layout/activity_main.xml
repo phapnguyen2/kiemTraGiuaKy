@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/EditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Họ Và Tên"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:text=""
+
+        app:layout_constraintEnd_toEndOf="@+id/EditName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/EditName"
+        app:layout_constraintTop_toBottomOf="@+id/EditName" />
+
+    <EditText
+        android:id="@+id/EditPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Số Điện Thoại"
+        app:layout_constraintEnd_toEndOf="@+id/EditEmail"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/EditEmail"
+        app:layout_constraintTop_toBottomOf="@+id/EditEmail" />
+
+    <EditText
+        android:id="@+id/EditAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:hint="Địa Chỉ"
+        app:layout_constraintEnd_toEndOf="@+id/EditPhone"
+        app:layout_constraintStart_toStartOf="@+id/EditPhone"
+        app:layout_constraintTop_toBottomOf="@+id/EditPhone" />
+
+    <Button
+        android:id="@+id/btnThem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Thêm Thông Tin"
+        app:layout_constraintEnd_toEndOf="@+id/EditAddress"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/EditAddress"
+        app:layout_constraintTop_toBottomOf="@+id/EditAddress" />
+
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sửa Thông Tin"
+        
+        app:layout_constraintEnd_toEndOf="@+id/btnThem"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnThem"
+        app:layout_constraintTop_toBottomOf="@+id/btnThem" />
+
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Xóa Thông Tin"
+        app:layout_constraintEnd_toEndOf="@+id/btnSua"
+        app:layout_constraintStart_toStartOf="@+id/btnSua"
+        app:layout_constraintTop_toBottomOf="@+id/btnSua" />
+
+    <Button
+        android:id="@+id/btnXem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Xem Thông Tin"
+        app:layout_constraintEnd_toEndOf="@+id/btnXoa"
+        app:layout_constraintStart_toStartOf="@+id/btnXoa"
+        app:layout_constraintTop_toBottomOf="@+id/btnXoa" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
